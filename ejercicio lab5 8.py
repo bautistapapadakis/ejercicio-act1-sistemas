@@ -18,5 +18,5 @@ for i in range(longitud):
     password += random.choice(todos)
 
 
-print("\n🔐 Contraseña generada:")
+print("\n Contraseña generada:")
 print(password)

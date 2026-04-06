@@ -12,7 +12,7 @@ def agregar_tarea():
     }
 
     tareas.append(tarea)
-    print("✅ Tarea agregada correctamente\n")
+    print(" Tarea agregada correctamente\n")
 
 
 def mostrar_tareas():
@@ -20,7 +20,7 @@ def mostrar_tareas():
         print("No hay tareas.\n")
         return
 
-    print("\n📋 Lista de tareas:")
+    print("\nLista de tareas:")
     for i, tarea in enumerate(tareas):
         estado = "✔" if tarea["completada"] else "❌"
         print(f"{i+1}. {tarea['descripcion']} | Fecha: {tarea['fecha']} | Estado: {estado}")
@@ -35,9 +35,9 @@ def completar_tarea():
     num = int(input("Ingrese el número de la tarea a completar: "))
     if 1 <= num <= len(tareas):
         tareas[num - 1]["completada"] = True
-        print("✅ Tarea marcada como completada\n")
+        print(" Tarea marcada como completada\n")
     else:
-        print("❌ Número inválido\n")
+        print(" Número inválido\n")
 
 
 def eliminar_tarea():
@@ -50,7 +50,7 @@ def eliminar_tarea():
         tareas.pop(num - 1)
         print("🗑 Tarea eliminada\n")
     else:
-        print("❌ Número inválido\n")
+        print(" Número inválido\n")
 
 
 # Menú principal

@@ -13,7 +13,7 @@ while True:
     print("Intento número:", numero_usuario)
 
     if numero_usuario == numero_secreto:
-        print("Adivinaste el número 🎉")
+        print("Adivinaste el número ")
         break
     elif numero_usuario < numero_secreto:
         print("El número es mayor")
